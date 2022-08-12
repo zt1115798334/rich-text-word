@@ -26,6 +26,7 @@ public class Main {
                 .build();
         Map<String, Object> data = new HashMap<>();
         data.put("key", html);
-        XWPFTemplate.compile("E:\\IdeaProjects\\rich-text-word\\src\\main\\resources\\input.docx", configure).render(data).writeToFile("output.docx");
+        XWPFTemplate.compile("E:\\IdeaProjects\\rich-text-word\\src\\main\\resources\\input.docx", configure)
+                .render(data).writeToFile("output.docx");
     }
 }
